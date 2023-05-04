@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset ="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Website Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/ff64637a6f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+
+        <nav>
+            <img src="./images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="./LoginPage/index.html">Login</a></li>
+                <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>
+                
+            </p>
+            <h1>Hi, I'm <span>Abie Amparo</span><br> from Zamboanga</h1>
+        </div>
+    </div>
+</div>
+
+<!-- --------------about--------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="./images/grad.JPG">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                   
+                <p>A virtual assistant with 1 year of experience in the field. 
+                    <br> Highly organized, efficient, and proactive individual who is passionate about providing exceptional service to clients. </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Computer Expertise</span><br>Microsoft Office, Canva, Filmora, Audacity, MS Visual Studio.</li>
+                        <li><span>Personal Skills</span><br>Video Editing, Videography, Graphic Designing, Photo Layout.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>Freelancer</span></li>
+                        <p> I am passionate about providing high-quality work and delivering results that exceed my clients' expectations. I am a self-motivated and dedicated individual who is committed to ensuring that every project is completed on time, within budget, and to the client's satisfaction. 
+                            <br>My services include Prepares pre-listing documents for the clients, designing pubmats for social media postings, editing video clips and I am always open to tailoring my services to meet the specific needs of my clients. Whether you need help with calendar management, email correspondence, social media management, or other tasks. 
+                        </p>
+                        <li><span>January 2022 - Present - Cyberbacker</span><br>Virtual Assistant, Transaction Coordinator.</li>
+                        <li><span>February 2021 - August 2021 - Online Tutor Acadsoc Information Co., Ltd.</span><br>Teaches Chinese students, Attend Trainings - Certificate of Employment August 3, 2021.</li>
+                        <li><span>November 2018 - December 2018 - Work Immersion WMSU Integrated Laboratory School</span><br>Teacher's assistant, Prepares the activity materials and checks the activities and assignments.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2019 - Present</span><br>Western Mindanao State University Bachelor of Information Technology.</li>
+                        <li><span>2017 - 2019</span><br>Western Mindanao University General Academic Strand (CTE).</li>
+                        <li><span>2013 - 2017</span><br>Zamboanga National Highschool - West.</li>
+                        <li><span>2007 - 2013</span><br>Upper Pasonanca Elementary School.</li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+</div>
+
+<!---------------- Service ------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Virtual Assistant</h2>
+                <p></p>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Transaction Coordinator</h2>
+                <p></p>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>English Tutor</h2>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------portfolio------------>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./images/phosec.jpg">
+                <div class="layer">
+                    <h3>Photo Section</h3>
+                    <p>In this section. You will see the photo portfolio works.</p>
+                    <a href="/LandingPage/PhotoPage/index.html"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------Contact---------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>abieamparo08@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+(63) 975-979-8601</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/biiieegaill08"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/@abieamparo9317"><i class="fa-brands fa-youtube-square"></i></a>
+                    <a href="https://www.instagram.com/biiieegaill/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right"></div>
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright© Abie Amparo.</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx7XvJqAdQUZJ-4FoPdb-EyOnif-qSPsKrX0OGdsOLyl7UAcrBKaZ8q8EjXaX3BohNgsw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    constmsg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+<script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+
+</body> 
+</html>
