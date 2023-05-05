@@ -1,0 +1,407 @@
+
+		*{
+			font-family: 'Sriracha', cursive;
+		}
+		
+		nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
+  .logo{
+      width: 180px;
+  }
+  
+  nav ul li{
+      display: inline-block;
+      list-style: none;
+      margin: 10px 20px;
+  }
+  
+  nav ul li a{
+      color: #080808;
+      text-decoration: none;
+      font-size: 18px;
+      position: relative;
+  }
+  nav ul li a::after{
+      content: '';
+      width: 0;
+      height: 3px;
+      background: #800000;
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      transition: 0.5s;
+  }
+  
+  nav ul li a:hover::after{
+      width: 100%;
+  }
+
+.about h3{
+  text-align: center;
+}
+
+
+		.page-bg {
+		  background: url('../jane.png');
+		  filter: brightness(50%);
+		  background-size: cover;
+		  position: fixed;
+		  width: 100%;
+		  height: 100%;
+		  top: 0;
+		  left: 0;
+		  z-index: -1;
+	}
+
+		.pic img{
+			border:2px solid #fff;
+			border-radius: 655px;
+			margin-left: 5%;
+		}
+
+		.pic h1{
+			color: #fff;
+			text-align: center;
+			margin: 10%;
+		}
+
+		.pic button {
+		  padding-top: 18%;
+
+		  display: block;
+		  margin: 0 auto;
+		  text-align: center;
+		  font-size: 58px;
+		  color: #e1e1e1;
+		  font-family: inherit;
+		  font-weight: 800;
+		  cursor: pointer;
+		  position: relative;
+		  border: none;
+		  background: none;
+		  text-transform: uppercase;
+		  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+		  transition-duration: 400ms;
+		  transition-property: color;
+		}
+
+		.pic button:focus,
+		.pic button:hover {
+		  color: #fff;
+		}
+
+		.pic button:focus:after,
+		.pic button:hover:after {
+		  width: 100%;
+		  left: 0%;
+		}
+
+		.pic button:after {
+		  content: "";
+		  pointer-events: none;
+		  bottom: -2px;
+		  left: 50%;
+		  position: absolute;
+		  width: 0%;
+		  height: 2px;
+		  background-color: #fff;
+		  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+		  transition-duration: 400ms;
+		  transition-property: width, left;
+		}
+
+		.about p{
+			margin-top: 5%;
+			margin-left: 10%;
+			font-size: 25px;
+			padding: 2%;
+			margin-right:10%;
+			color: #fff;
+			background-color: #393053;
+			border-radius: 0px 25px 0px 25px;
+			opacity: 85%;
+		}
+
+		.about img{
+			padding-left: 5%;
+			padding-right:5%;
+			margin-top: 30%;
+			color: #ffffff;
+
+		}
+
+		.about .carousel{
+			margin-left: 10%;
+			margin-right: 10%;
+		}
+
+		.skill_jane{
+			text-align: center;
+			color: #fff;
+			margin-bottom: 5%;
+		}
+
+
+		.skills p{
+			margin-top: 3%;
+			margin-left: 10%;
+			font-size: 25px;
+			padding: 2%;
+			margin-right:10%;
+			color: #fff;
+			background-color: #393053;
+			border-radius: 0px 25px 0px 25px;
+			opacity: 85%;
+		}
+
+.skills{
+	display: flex;
+	justify-content: space-around;
+	padding: 2%;
+}
+
+
+.card {
+  position: relative;
+  width: 190px;
+  height: 254px;
+  background: #f00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(315deg,#03a9f4,#ff0058);
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(315deg,#03a9f4,#ff0058);
+  filter: blur(30px);
+}
+
+.card b {
+  position: absolute;
+  inset: 6px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+.card img {
+  position: absolute;
+  z-index: 3;
+  scale: 0.8;
+  opacity: 0.25;
+  transition: 0.5s;
+}
+
+.card:hover img {
+  scale: 0.5;
+  opacity: 0.9;
+  transform: translateY(-70px);
+}
+
+.card .content {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+.card:hover .content {
+  transform: scale(1);
+  bottom: 25px;
+}
+
+.content .title {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1em;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.content .title span {
+  font-weight: 300;
+  font-size: 0.70em;
+}
+
+.content .sci {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.sci li {
+  list-style: none;
+}
+
+.sci li .fa-brands {
+  width: 14px;
+}
+
+.sci li .fa-facebook {
+  width: 10px;
+}
+
+.sci li a {
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.2);
+  fill: currentColor;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+
+.sci li a:hover {
+  fill: currentColor;
+  color: rgba(255, 255, 255, 1);
+}
+
+.myform{
+	color: #fff;
+	border-radius: 25px 0px 25px 0px;
+	padding: 2%;
+	margin: 5%;
+	background-color: #393053;
+	opacity: 85%;
+}
+
+.myform a{
+	text-decoration: none;
+	color: #fff
+}
+
+.myform a:hover{
+	color: grey;
+}
+
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(24, 20, 20, 0.987);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #bdb8b8;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box a:hover {
+  background: #03f40f;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03f40f,
+              0 0 25px #03f40f,
+              0 0 50px #03f40f,
+              0 0 100px #03f40f;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(1) {
+  bottom: 2px;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03f40f);
+  animation: btn-anim1 2s linear infinite;
+}
+
